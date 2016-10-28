@@ -103,7 +103,7 @@ function! FMLShow()
     setlocal bufhidden=hide
     setlocal noswapfile
     setlocal nobuflisted
-
+    setlocal nospell
     nnoremap <buffer> <silent> q :bdelete<cr>
     silent file [Follow My Lead]
     let s:fml_bufnr = bufnr('%')
